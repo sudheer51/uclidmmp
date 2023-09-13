@@ -1,4 +1,4 @@
-package org.iitwforce.mmp.pages;
+package org.iitwforce.mmp.patientmodule.pages;
 
 import java.time.Duration;
 import java.util.HashMap;

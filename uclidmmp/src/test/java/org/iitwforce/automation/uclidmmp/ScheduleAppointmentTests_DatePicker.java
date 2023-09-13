@@ -4,8 +4,8 @@ import java.util.HashMap;
 
 import org.iitwforce.lib.BaseClass;
 import org.iitwforce.mmp.MMPLibrary;
-import org.iitwforce.mmp.pages.HomePage;
-import org.iitwforce.mmp.pages.ScheduleAppointmentPage;
+import org.iitwforce.mmp.patientmodule.pages.HomePage;
+import org.iitwforce.mmp.patientmodule.pages.ScheduleAppointmentPage;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;

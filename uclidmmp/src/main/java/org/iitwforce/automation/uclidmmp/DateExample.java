@@ -9,7 +9,7 @@ public class DateExample {
 
 	public static void main(String[] args) {
 
-		String futureDate   =getfutureDate(10,"MMMM/dd/YYYY");
+		String futureDate   =getfutureDate(15,"MMMM/d/YYYY");
 		System.out.println(futureDate.split("/")[0]);
 		System.out.println(futureDate.split("/")[1]);
 		System.out.println(futureDate.split("/")[2]);

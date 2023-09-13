@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeClass;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
-	int i ;
+ 
 	protected WebDriver driver;
 	protected Properties prop;
 	@BeforeClass
@@ -22,7 +22,7 @@ public class BaseClass {
 		ProjectConfiguration pConfig = new ProjectConfiguration();
 		File f = new File("config/mmp.properties");
 		prop = pConfig.loadProperties(f.getAbsolutePath());
-		String browserType = prop.getProperty("browser");
+		String browserType = prop.getProperty("browserType");
 		if(browserType.equals("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
