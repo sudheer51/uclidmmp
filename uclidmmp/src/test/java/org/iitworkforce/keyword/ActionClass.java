@@ -39,7 +39,7 @@ public class ActionClass {
 		for (row=1; row <=rowCount; row++) {
 			List<Object> myParamList = new ArrayList<Object>();
 			String methodName = ExcelUtils.getCellData(row,2);
-			for (int col = 3; col < 7; col++) {
+			for (int col = 3; col < 6; col++) {
 				if (!ExcelUtils.getCellData(row, col).isEmpty()
 						& !ExcelUtils.getCellData(row, col).equals("null")) {
 					myParamList.add(ExcelUtils.getCellData(row,col));

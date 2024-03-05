@@ -41,7 +41,7 @@ public class ConnectionManager
 	@DataProvider(name="DP")
 	public String[][] feedDP() throws ClassNotFoundException, SQLException
 	{
-		String data[][] =AppLibrary.getDBValues("root","root","testdb","localhost");
+		String data[][] =AppLibrary.getDBValues("root","root","mmp","patient_data","localhost");
 		return data;
 	}
 	 

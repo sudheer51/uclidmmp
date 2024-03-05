@@ -19,12 +19,7 @@ public class ExcelUtils {
 		excelWSheet = excelWBook.getSheet(SheetName);
 	}
 	public static String getCellData(int RowNum, int ColNum) throws Exception{
-		//
-		//row = excelWSheet.getRow(RowNum);
-		//cell =row.getCell(ColNum);
-		
 		cell = excelWSheet.getRow(RowNum).getCell(ColNum);
-		
 		String CellData = cell.getStringCellValue();
 		return CellData;
 	}
@@ -32,7 +27,7 @@ public class ExcelUtils {
 		cell = excelWSheet.getRow(RowNum).createCell(ColNum);
 		cell.setCellType(CellType.STRING);
 		cell.setCellValue(result);
-		FileOutputStream fos=new FileOutputStream("inputData.xlsx");
+		FileOutputStream fos=new FileOutputStream("keywordData.xlsx");
 		excelWBook.write(fos);
 		fos.close();
 	}
