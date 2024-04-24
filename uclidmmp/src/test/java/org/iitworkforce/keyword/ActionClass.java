@@ -3,6 +3,7 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -84,6 +85,13 @@ public class ActionClass {
 			System.out.println(e);
 
 		}
+	}
+	public String verifyTextInAlert()
+	{
+		Alert alrt = driver.switchTo().alert();
+		String alertText = alrt.getText();
+		alrt.accept();
+		return alertText;
 	}
 	public void verifyText(String elementReference, String referenceValue,String data)
 	{

@@ -32,9 +32,7 @@ public class DriverScript {
 		else
 		{
 			WebDriverManager.chromedriver().setup();
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--remote-allow-origins=*");
-			driver = new ChromeDriver(options);
+			driver = new ChromeDriver();
 		}
 
 	}
@@ -47,7 +45,7 @@ public class DriverScript {
 		 * param3 : sheet name
 		 */
 		ActionClass actionClass = new ActionClass();
-		boolean result = actionClass.run(driver,"keywordData.xlsx","E2E_001");
+		boolean result = actionClass.run(driver,"keywordData.xlsx","E2E_002");
 		Assert.assertTrue(result);
 
 	}
